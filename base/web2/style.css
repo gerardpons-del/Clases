@@ -1,0 +1,184 @@
+/* Variables y reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #121216;
+    color: #e0e0e0;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Header / Navegación */
+header {
+    background-color: #1a0826;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(186, 24, 27, 0.4);
+    border-bottom: 2px solid #ff2a2a;
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #ff2a2a;
+    text-shadow: 0 0 8px rgba(255, 42, 42, 0.6);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff2a2a;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(18, 18, 22, 0.85), rgba(18, 18, 22, 0.85)), 
+                url('https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 1rem;
+    border-bottom: 1px solid #33103a;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ff4d4d;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    color: #cccccc;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #ff2a2a;
+    color: #ffffff;
+    padding: 0.8rem 1.8rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 12px rgba(255, 42, 42, 0.5);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.boton:hover {
+    background-color: #d90429;
+    transform: scale(1.05);
+}
+
+/* Sección Servicios / Tarjetas */
+.servicios {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.servicios h2 {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    color: #ffffff;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.tarjeta {
+    background: #1c1c24;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border: 1px solid #2d2d3a;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    border-color: #ff2a2a;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tarjeta h3 {
+    font-size: 1.3rem;
+    margin: 1.2rem 1rem 0.5rem;
+    color: #ff4d4d;
+}
+
+.tarjeta p {
+    padding: 0 1rem 1.5rem;
+    color: #aaaaaa;
+    font-size: 0.95rem;
+}
+
+/* Sección Contacto */
+.contacto {
+    background-color: #160a21;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 1rem;
+    border-top: 1px solid #33103a;
+}
+
+.contacto h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contacto p {
+    margin-bottom: 1.5rem;
+    color: #cccccc;
+}
+
+.contacto a {
+    color: #ff2a2a;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contacto a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #0d0614;
+    color: #777788;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+}

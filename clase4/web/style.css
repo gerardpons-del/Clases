@@ -1,0 +1,206 @@
+/* Configuración general */
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263238;
+    background-color: #f4f7fb;
+    line-height: 1.6;
+}
+
+
+.contenedor {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+}
+
+
+/* Cabecera */
+header {
+    background-color: #102a43;
+    color: white;
+    padding: 18px 0;
+}
+
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 1.7rem;
+}
+
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+nav a:hover {
+    color: #63d5fa;
+}
+
+
+/* Presentación */
+.hero {
+    padding: 85px 0;
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg, #1261a0, #0b2545);
+}
+
+
+.hero h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin: 0 0 15px;
+}
+
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+}
+
+
+.boton {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: #63d5fa;
+    color: #102a43;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+
+.boton:hover {
+    background-color: white;
+}
+
+
+/* Tarjetas de servicios */
+.servicios {
+    padding-top: 55px;
+    padding-bottom: 65px;
+}
+
+
+.servicios > h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+
+.tarjeta {
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+
+.tarjeta img {
+    display: block;
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+
+.tarjeta h3,
+.tarjeta p {
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+
+.tarjeta h3 {
+    color: #1261a0;
+}
+
+
+.tarjeta p {
+    margin-bottom: 22px;
+}
+
+
+/* Contacto */
+.contacto {
+    padding: 45px 0;
+    text-align: center;
+    background-color: #dceef8;
+}
+
+
+.contacto a {
+    color: #1261a0;
+    font-weight: bold;
+}
+
+
+/* Pie de página */
+footer {
+    padding: 18px;
+    text-align: center;
+    color: white;
+    background-color: #102a43;
+}
+
+
+footer p {
+    margin: 0;
+}
+
+
+/* Adaptación a móviles */
+@media (max-width: 700px) {
+    header .contenedor {
+        flex-direction: column;
+    }
+
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+
+    .hero {
+        padding: 55px 0;
+    }
+}
+
